@@ -1,116 +1,167 @@
-# 💊 Indian Pharmaceutical Market Analysis
-### *Data-Driven Insights using Excel*
+# 📊 Intel Sales Analysis  
+### *Sales Performance & Business Insights*
 
-## 📌 Project Overview
-The Indian pharmaceutical industry includes thousands of products across diverse therapeutic classes and pricing segments.  
-This project analyzes a **large-scale pharmaceutical dataset** to uncover:
-
-- Medicine pricing trends  
-- Manufacturer dominance  
-- Product discontinuation patterns  
-- Therapeutic class insights  
-
-The objective is to support **competitive analysis and pricing strategy decisions** using data-driven insights.
+**Prepared by:** Ankandip Sen  
+**Tools:** Power BI  
 
 ---
 
-## 🎯 Project Objectives
-- Understand medicine pricing patterns  
-- Identify top manufacturers and market leaders  
-- Analyze product discontinuation trends  
-- Provide actionable business recommendations  
+## 🎯 Business Objective
+
+- **Sales Performance:**  
+  Analyze mobile phone sales across countries and identify growth patterns  
+
+- **Top Performers:**  
+  Identify leading brands, distributors, and regional markets  
+
+- **Regional Insights:**  
+  Understand geographic sales contribution and market dynamics  
+
+- **Strategic Decisions:**  
+  Enable data-driven business planning and resource allocation  
 
 ---
 
 ## 📂 Dataset Overview
-- **Source:** Kaggle – Indian Pharmaceutical Products Dataset  
-- **Total Records:** 153,972  
 
-### Key Fields
-| Column Name | Description |
-|------------|------------|
-| brand_name | Medicine name |
-| manufacturer | Producing company |
-| price_inr | Price in INR |
-| dosage_form | Tablet, syrup, etc. |
-| primary_ingredient | Key component |
-| therapeutic_class | Drug category |
-| is_discontinued | Product availability |
+### 📌 Data Scope
+- **Total Transactions:** 2,998  
+- **Time Period:** 2018 – 2021  
+- Comprehensive coverage of mobile phone sales across multiple markets, distributors, and brands  
 
----
-
-## 🧹 Data Cleaning & Preparation
-Performed using **Excel – Power Query Editor**:
-
-- Removed unnecessary index columns  
-- Handled missing values (pack size, unit, strength)  
-- Removed duplicate records and null brand names  
-- Standardized text (TRIM, Proper Case)  
-- Filtered invalid prices (`price_inr ≤ 0`)  
-- Split packaging details into `pack_size` and `pack_unit`  
-- Ensured correct data types for all columns  
+### 🔑 Key Data Fields
+- Transaction date and timeline  
+- Country and regional data  
+- Distributor networks  
+- Brand and operator information  
+- Unit cost and pricing  
+- Units sold and revenue  
 
 ---
 
-## 💰 Price Categorization
-Created a `Price_Group` column for affordability analysis:
+## 🧹 Data Preparation Process
 
-| Price Group | Range (INR) |
-|------------|-------------|
-| Very Low | < ₹50 |
-| Low | ₹50 – ₹100 |
-| Medium | ₹101 – ₹200 |
-| High | ₹201 – ₹500 |
-| Very High | > ₹500 |
+### Data Cleaning
+- Removed duplicate records  
+- Handled missing values using Power Query  
 
-Used as a **slicer** in the Power BI dashboard.
+### Transformation
+- Standardized date formats  
+- Normalized numeric fields  
 
----
+### Validation
+- Verified sales calculations  
+- Ensured data integrity across all records  
 
-## 📊 Data Analysis & Dashboard Design
-### 🛠 Tools Used
-- Microsoft Excel  
-- Power BI  
-
-### 📈 Key Visuals
-- KPI Cards: Total Products, Average Price, % Discontinued  
-- Bar Chart: Top 10 Manufacturers  
-- Pie Chart: Distribution by Dosage Form  
-- Column Chart: Avg Price by Therapeutic Class  
-- Scatter Plot: Price vs Pack Size  
-- Slicers: Price Group, Therapeutic Class  
+### KPI Creation
+- Built measures for key metrics and trend analysis  
 
 ---
 
-## 🔍 Key Insights
-- **Top Manufacturers:** Sun Pharma, Cipla, GSK  
-- **Price Distribution:** ~60% of medicines priced below ₹200  
-- **Dosage Form:** Tablets account for over 70%  
-- **Therapeutic Class:** Antibiotics dominate market share  
-- **Premium Segment:** >₹500 drugs are mainly specialized therapies  
-- **Discontinuation Rate:** ~3%  
+## 📈 Key Performance Indicators (KPIs)
+
+- **💰 Total Sales Revenue:** $127.2M  
+- **📦 Units Sold:** 152K mobile phones  
+- **💵 Average Unit Price:** $830  
+
+### 🏆 Top Brand by Revenue
+- **Apple** leads with a premium product strategy and strong market presence  
+
+### 🌎 Top Country by Revenue
+- **Colombia** emerges as the highest-performing regional market  
 
 ---
 
-## 💡 Business Recommendations
-- Focus on **₹50–₹200 mass-market pricing**  
-- Increase R&D in **antibiotics and antihistamines**  
-- Standardize packaging to reduce costs  
-- Monitor pricing in price-sensitive categories  
-- Use dashboards for continuous market tracking  
+## 📱 Brand Performance Analysis
+
+### Apple Dominates Revenue
+- Highest revenue-generating brand  
+- Strong consumer loyalty and premium positioning  
+
+### Premium Pricing Strategy
+- High average unit price reflects strong brand value perception  
+
+### Competitive Landscape
+- Other brands achieve higher unit volumes but lower revenue  
+- Indicates price-driven market segmentation  
+
+### Revenue Driver Insight
+- Premium, high-margin products contribute more to revenue than volume sales  
 
 ---
 
-## 🚀 Conclusion & Next Steps
-This project demonstrates how **Excel and Power BI** convert raw pharmaceutical data into actionable business insights.
+## 🌍 Regional Sales Distribution
 
-### Future Enhancements
-- Integrate sales & regional data  
-- Automate using Azure SQL  
-- Apply AI-based price forecasting  
+### Colombia Leads Markets
+- Top-performing country by total sales revenue  
+- Strong distributor networks and operator partnerships  
+
+### Market Share Breakdown
+- **42%** – Colombia  
+- **28%** – Other Top 3 countries (combined)  
+- **30%** – Remaining markets (growth opportunity)  
 
 ---
 
-## 🙌 Acknowledgements
-- Dataset: Kaggle – Indian Pharmaceutical Products Dataset  
-- Tools: Microsoft Excel & Power BI  
+## 📉 Sales Trend Analysis
+
+### Consistent Performance
+- Steady sales levels across years  
+- Gradual upward revenue trend  
+
+### Stable Demand Patterns
+- Sustained market demand  
+- No heavy seasonality observed  
+
+### Market Maturity
+- Indicates predictable revenue streams  
+- Long-term growth potential  
+
+---
+
+## 🚚 Distribution Channel Performance
+
+### 🔝 Key Distributors
+1. **Metro** – Leading distributor with extensive retail footprint  
+2. **Ripley** – Strong regional presence and customer base  
+3. **Saga Falabella** – Premium retail positioning and broad market reach  
+
+---
+
+## 📡 Operator Insights
+
+- **Tuenti** appears frequently across transactions  
+- Strong operator-distributor partnerships drive performance  
+- Specific channel combinations significantly impact revenue and volume  
+
+---
+
+## 💡 Strategic Recommendations
+
+### 🎯 Focus High-Value Markets
+- Prioritize top-performing countries like **Colombia**  
+- Replicate successful regional strategies  
+
+### 📱 Premium Product Strategy
+- Expand high-margin premium product availability  
+- Maintain revenue-focused approach over volume  
+
+### 🤝 Optimize Partnerships
+- Strengthen relationships with top distributors and operators  
+- Identify and scale successful channel combinations  
+
+### 📊 Data-Driven Decisions
+- Use Power BI dashboards for real-time monitoring  
+- Enable continuous strategic planning  
+
+---
+
+## ✅ Conclusion
+- Delivered actionable insights using sales data  
+- Identified key revenue drivers by brand and region  
+- Dashboard supports informed strategic decision-making  
+
+---
+
+## 🙏 Thank You
+**Questions & Discussion**
